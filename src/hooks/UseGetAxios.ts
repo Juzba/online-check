@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useCallback, useState } from "react";
 
-const UseAxios = <T>(url: string) => {
+const UseGetAxios = <T>(url: string) => {
 	const [error, setError] = useState<string | null>(null);
 	const [loading, setLoading] = useState(false);
 
@@ -26,7 +26,7 @@ const UseAxios = <T>(url: string) => {
 	return { error, loading, fetchData };
 };
 
-export default UseAxios;
+export default UseGetAxios;
 
 // -------------------------------------------------------
 // Použití v Komponentě !!!
